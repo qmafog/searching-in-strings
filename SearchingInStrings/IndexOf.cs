@@ -1,4 +1,7 @@
 ﻿using System;
+#pragma warning disable
+
+
 
 namespace SearchingInStrings
 {
@@ -10,9 +13,7 @@ namespace SearchingInStrings
         /// <returns>The zero-based index position of <see cref="value"/> if that character is found, or -1 if it is not.</returns>
         public static int GetIndexOfChar(string str, char value)
         {
-            // TODO #1-1. Implement the method using String.IndexOf instance method.
-            // See String.IndexOf method documentation page: https://docs.microsoft.com/en-us/dotnet/api/system.string.indexof
-            throw new NotImplementedException();
+            return str.IndexOf(value);
         }
 
         /// <summary>
@@ -21,11 +22,7 @@ namespace SearchingInStrings
         /// <returns>The zero-based index position of <see cref="value"/> if that character is found, or -1 if it is not.</returns>
         public static int GetIndexOfCharInvariantCultureIgnoreCase(string str, char value)
         {
-            // TODO #1-2. Implement the method using String.IndexOf instance method. Analyze the unit tests, and use the correct StringComparison enumeration value.
-            // See String.IndexOf and StringComparison documentation pages:
-            // * https://docs.microsoft.com/en-us/dotnet/api/system.string.indexof
-            // * https://docs.microsoft.com/en-us/dotnet/api/system.stringcomparison
-            throw new NotImplementedException();
+            return str.IndexOf(value, StringComparison.InvariantCultureIgnoreCase);
         }
 
         /// <summary>
@@ -34,11 +31,7 @@ namespace SearchingInStrings
         /// <returns>The zero-based index position of <see cref="value"/> if that character is found, or -1 if it is not.</returns>
         public static int GetIndexOfCharWithStringComparison(string str, char value)
         {
-            // TODO #1-3. Implement the method using String.IndexOf instance method. Analyze the unit tests, and use the correct StringComparison enumeration value.
-            // See String.IndexOf and StringComparison documentation pages:
-            // * https://docs.microsoft.com/en-us/dotnet/api/system.string.indexof
-            // * https://docs.microsoft.com/en-us/dotnet/api/system.stringcomparison
-            throw new NotImplementedException();
+            return str.IndexOf(value, StringComparison.InvariantCultureIgnoreCase);
         }
 
         /// <summary>
@@ -47,9 +40,7 @@ namespace SearchingInStrings
         /// <returns>The zero-based index position of <paramref name="value"/> from the start of the string if that character is found, or -1 if it is not.</returns>
         public static int GetIndexOfChar(string str, char value, int startIndex)
         {
-            // TODO #1-4. Implement the method using String.IndexOf instance method.
-            // See String.IndexOf method documentation page: https://docs.microsoft.com/en-us/dotnet/api/system.string.indexof
-            throw new NotImplementedException();
+            return str.IndexOf(value, startIndex);
         }
 
         /// <summary>
@@ -58,9 +49,7 @@ namespace SearchingInStrings
         /// <returns>The zero-based index position of <paramref name="value"/> from the start of the string if that character is found, or -1 if it is not.</returns>
         public static int GetIndexOfChar(string str, char value, int startIndex, int count)
         {
-            // TODO #1-5. Implement the method using String.IndexOf instance method.
-            // See String.IndexOf method documentation page: https://docs.microsoft.com/en-us/dotnet/api/system.string.indexof
-            throw new NotImplementedException();
+            return str.IndexOf(value, startIndex, count);
         }
 
         /// <summary>
@@ -69,9 +58,7 @@ namespace SearchingInStrings
         /// <returns>The zero-based index position of <paramref name="value"/> if that string is found, or -1 if it is not. If value is <see cref="string.Empty"/>, the return <paramref name="value"/> is 0.</returns>
         public static int GetIndexOfString(string str, string value)
         {
-            // TODO #1-6. Implement the method using String.IndexOf instance method.
-            // See String.IndexOf method documentation page: https://docs.microsoft.com/en-us/dotnet/api/system.string.indexof
-            throw new NotImplementedException();
+            return str.IndexOf(value);
         }
 
         /// <summary>
@@ -80,11 +67,7 @@ namespace SearchingInStrings
         /// <returns>The index position of the <paramref name="value"/> parameter if that string is found, or -1 if it is not. If <paramref name="value"/> is <see cref="string.Empty"/>, the return value is 0.</returns>
         public static int GetIndexOfStringOrdinal(string str, string value)
         {
-            // TODO #1-7. Implement the method using String.IndexOf instance method. Analyze the unit tests, and use the correct StringComparison enumeration value.
-            // See String.IndexOf and StringComparison documentation pages:
-            // * https://docs.microsoft.com/en-us/dotnet/api/system.string.indexof
-            // * https://docs.microsoft.com/en-us/dotnet/api/system.stringcomparison
-            throw new NotImplementedException();
+            return str.IndexOf(value, StringComparison.Ordinal);
         }
 
         /// <summary>
@@ -93,11 +76,7 @@ namespace SearchingInStrings
         /// <returns>The index position of the <paramref name="value"/> parameter if that string is found, or -1 if it is not. If <paramref name="value"/> is <see cref="string.Empty"/>, the return value is 0.</returns>
         public static int GetIndexOfStringWithStringComparison(string str, string value)
         {
-            // TODO #1-8. Implement the method using String.IndexOf instance method. Analyze the unit tests, and use the correct StringComparison enumeration value.
-            // See String.IndexOf and StringComparison documentation pages:
-            // * https://docs.microsoft.com/en-us/dotnet/api/system.string.indexof
-            // * https://docs.microsoft.com/en-us/dotnet/api/system.stringcomparison
-            throw new NotImplementedException();
+            return str.IndexOf(value, StringComparison.InvariantCulture);
         }
 
         /// <summary>
@@ -106,9 +85,7 @@ namespace SearchingInStrings
         /// <returns>The zero-based index position of <paramref name="value"/> from the start of the current instance if that string is found, or -1 if it is not. If value is Empty, the return <paramref name="value"/> is <paramref name="startIndex"/>.</returns>
         public static int GetIndexOfString(string str, string value, int startIndex)
         {
-            // TODO #1-9. Implement the method using String.IndexOf instance method.
-            // See String.IndexOf method documentation page: https://docs.microsoft.com/en-us/dotnet/api/system.string.indexof
-            throw new NotImplementedException();
+            return str.IndexOf(value, startIndex);
         }
 
         /// <summary>
@@ -117,11 +94,7 @@ namespace SearchingInStrings
         /// <returns>The zero-based index position of <paramref name="value"/> from the start of the current instance if that string is found, or -1 if it is not. If value is Empty, the return <paramref name="value"/> is <paramref name="startIndex"/>.</returns>
         public static int GetIndexOfStringCurrentCultureIgnoreCase(string str, string value, int startIndex)
         {
-            // TODO #1-10. Implement the method using String.IndexOf instance method. Analyze the unit tests, and use the correct StringComparison enumeration value.
-            // See String.IndexOf and StringComparison documentation pages:
-            // * https://docs.microsoft.com/en-us/dotnet/api/system.string.indexof
-            // * https://docs.microsoft.com/en-us/dotnet/api/system.stringcomparison
-            throw new NotImplementedException();
+            return str.IndexOf(value, startIndex, StringComparison.CurrentCultureIgnoreCase);
         }
 
         /// <summary>
@@ -130,11 +103,7 @@ namespace SearchingInStrings
         /// <returns>The zero-based index position of <paramref name="value"/> from the start of the current instance if that string is found, or -1 if it is not. If value is Empty, the return <paramref name="value"/> is <paramref name="startIndex"/>.</returns>
         public static int GetIndexOfStringWithStringComparison(string str, string value, int startIndex)
         {
-            // TODO #1-11. Implement the method using String.IndexOf instance method. Analyze the unit tests, and use the correct StringComparison enumeration value.
-            // See String.IndexOf and StringComparison documentation pages:
-            // * https://docs.microsoft.com/en-us/dotnet/api/system.string.indexof
-            // * https://docs.microsoft.com/en-us/dotnet/api/system.stringcomparison
-            throw new NotImplementedException();
+            return str.IndexOf(value, startIndex, StringComparison.CurrentCulture);
         }
 
         /// <summary>
@@ -143,9 +112,7 @@ namespace SearchingInStrings
         /// <returns>The zero-based index position of <paramref name="value"/> from the start of the current instance if that string is found, or -1 if it is not. If value is Empty, the return <paramref name="value"/> is <paramref name="startIndex"/>.</returns>
         public static int GetIndexOfString(string str, string value, int startIndex, int count)
         {
-            // TODO #1-12. Implement the method using String.IndexOf instance method.
-            // See String.IndexOf method documentation page: https://docs.microsoft.com/en-us/dotnet/api/system.string.indexof
-            throw new NotImplementedException();
+            return str.IndexOf(value, startIndex, count);
         }
 
         /// <summary>
@@ -154,11 +121,7 @@ namespace SearchingInStrings
         /// <returns>The zero-based index position of <paramref name="value"/> from the start of the current instance if that string is found, or -1 if it is not. If value is Empty, the return <paramref name="value"/> is <paramref name="startIndex"/>.</returns>
         public static int GetIndexOfStringInvariantCulture(string str, string value, int startIndex, int count)
         {
-            // TODO #1-13. Implement the method using String.IndexOf instance method. Analyze the unit tests, and use the correct StringComparison enumeration value.
-            // See String.IndexOf and StringComparison documentation pages:
-            // * https://docs.microsoft.com/en-us/dotnet/api/system.string.indexof
-            // * https://docs.microsoft.com/en-us/dotnet/api/system.stringcomparison
-            throw new NotImplementedException();
+            return str.IndexOf(value, startIndex, count, StringComparison.CurrentCulture);
         }
 
         /// <summary>
@@ -167,11 +130,7 @@ namespace SearchingInStrings
         /// <returns>The zero-based index position of <paramref name="value"/> from the start of the current instance if that string is found, or -1 if it is not. If value is Empty, the return <paramref name="value"/> is <paramref name="startIndex"/>.</returns>
         public static int GetIndexOfStringWithStringComparison(string str, string value, int startIndex, int count)
         {
-            // TODO #1-14. Implement the method using String.IndexOf instance method. Analyze the unit tests, and use the correct StringComparison enumeration value.
-            // See String.IndexOf and StringComparison documentation pages:
-            // * https://docs.microsoft.com/en-us/dotnet/api/system.string.indexof
-            // * https://docs.microsoft.com/en-us/dotnet/api/system.stringcomparison
-            throw new NotImplementedException();
+            return str.IndexOf(value, startIndex, count, StringComparison.CurrentCultureIgnoreCase);
         }
     }
 }
